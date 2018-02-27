@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">微Yue</string>
+
+    <!--read-->
+    <string name="wy.read.community">社区</string>
+    <string name="wy.read.brief">简介</string>
+    <string name="wy.read.setting">设置</string>
+    <string name="wy.read.download">缓存</string>'
+    <string name="wy.read.category">目录</string>
+    <string name="wy.read.no_chapter">第 %1$d 章(%2$d)</string>
+
+    <!--mode-->
+    <string name="wy.mode.night">夜间</string>
+    <string name="wy.mode.morning">日间</string>
+
+
+    <string name="close">关闭</string>
+    <string name="cancel">取消</string>
+    <string name="done">完成</string>
+    <string name="theme">主题</string>
+
+    <string name="about">关于我</string>
+    <string name="about_me">Github：<a href="https://github.com/AldrichLL">AldrichLL</a></string>
+
+
+    <!--file system-->
+    <string name="wy.file.sub_count">%1$d 项</string>
+    <string name="wy.file.path">存储卡:%1$s</string>
+    <string name="wy.file.add_shelf">加入书架</string>
+    <string name="wy.file.add_shelves">加入书架(%1$d)</string>
+    <string name="wy.file.add_succeed">成功添加%1$d本书</string>
+
+
+    <!--常用-->
+    <string name="wy.common.tip">提示</string>
+    <string name="wy.common.sure">确定</string>
+    <string name="wy.common.cancel">取消</string>
+
+
+    <!--CollBook的长按点击-->
+    <string-array name="wy_menu_net_book">
+        <item>删除</item>
+        <item>缓存</item>
+    </string-array>
+
+    <string-array name="wy_menu_local_book">
+        <item>删除</item>
+    </string-array>
+
+    <!--download 下载书籍-->
+    <string name="wy.download.start">继续</string>
+    <string name="wy.download.pause">暂停</string>
+    <string name="wy.download.wait">等待</string>
+    <string name="wy.download.error">错误</string>
+    <string name="wy.download.finish">完成</string>
+
+    <string name="wy.download.loading">下载中</string>
+    <string name="wy.download.waiting">等待中</string>
+    <string name="wy.download.pausing">暂停中</string>
+    <string name="wy.download.complete">已完成</string>
+    <string name="wy.download.source_error">资源或网络错误</string>
+
+    <string name="wy.download.chapter_scope">(%1$d-%2$d章)</string>
+    <string name="title_activity_login">用户登录</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="about_content">此项目建立主要是对自己技术学习的总结。主要是对NodeJs后台知识的实践，此项目的数据是爬取追书神器的部分数据，然后在自己的服务器进行整理关联自己的用户系统。前前后后用了3个多月才算正式完成，主要是业余时间不是特别多，项目功能不多，实现了简单的登录、注册、阅读、收藏、下载等比较常用的功能。后面有时间的话可能会对数据源进行整合，争取多弄些书籍数据，如果大家有什么好的意见也欢迎联系我。</string>
+
+
+</resources>

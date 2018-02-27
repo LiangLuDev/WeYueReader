@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_menu_name">
+        <item>分类</item>
+        <item>书架</item>
+        <!--<item>社区</item>-->
+        <!--<item>排行榜</item>-->
+        <!--<item>主题书单</item>-->
+        <item>扫描书籍</item>
+        <!--<item>缓存列表</item>-->
+        <item>意见反馈</item>
+        <item>关于作者</item>
+    </string-array>
+
+    <string-array name="main_menu_icon">
+        <item>@drawable/ic_classify</item>
+        <item>@drawable/ic_book_shelf</item>
+        <!--<item>@drawable/ic_community</item>-->
+        <!--<item>@drawable/ic_leaderboards</item>-->
+        <!--<item>@drawable/ic_office</item>-->
+        <item>@drawable/ic_scan</item>
+        <!--<item>@drawable/ic_download</item>-->
+        <item>@drawable/ic_feedback</item>
+        <item>@drawable/ic_about</item>
+    </string-array>
+</resources>

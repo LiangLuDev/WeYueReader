@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lianglu.weyue.widget.theme.ColorTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/shape_rect_round_line_51"
+    android:paddingBottom="3dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="3dp"
+    android:text="标签"
+    android:textColor="?attr/colorPrimary"
+    android:textSize="14sp">
+
+</com.lianglu.weyue.widget.theme.ColorTextView>

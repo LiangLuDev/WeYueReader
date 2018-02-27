@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tool="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:orientation="vertical">
+
+    <View
+        android:id="@+id/read_bg_view"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@color/color_cec29c"/>
+
+    <ImageView
+        android:id="@+id/read_bg_iv_checked"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:scaleType="center"
+        android:src="@mipmap/bg_checked"
+        android:visibility="gone"
+        tool:visibility="visible"
+        />
+</FrameLayout>

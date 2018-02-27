@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lianglu.weyue.widget.theme.ColorRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary">
+
+    <com.lianglu.weyue.widget.theme.ColorView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?attr/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/status_bar">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_toolbar_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <com.lianglu.weyue.widget.MarqueTextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_toRightOf="@+id/iv_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:ellipsize="marquee"
+            android:layout_marginLeft="5dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_toolbar_more"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_search"
+            tools:visibility="visible"
+            />
+
+    </RelativeLayout>
+
+</com.lianglu.weyue.widget.theme.ColorRelativeLayout>

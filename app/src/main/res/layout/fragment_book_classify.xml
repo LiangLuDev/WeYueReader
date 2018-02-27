@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_e3"
+              android:orientation="vertical">
+
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/refresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:srlEnableLoadmore="false">-->
+
+        <com.lianglu.weyue.widget.theme.ColorRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <com.gigamole.navigationtabstrip.NavigationTabStrip
+                android:id="@+id/nts_classify"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:nts_active_color="@color/white"
+                app:nts_animation_duration="300"
+                app:nts_color="@color/white"
+                app:nts_corners_radius="1.5dp"
+                app:nts_factor="2.5"
+                app:nts_gravity="bottom"
+                app:nts_inactive_color="#c4c4c4"
+                app:nts_size="15sp"
+                app:nts_type="line"
+                app:nts_typeface="fonts/typeface.otf"
+                app:nts_weight="3dp"/>
+        </com.lianglu.weyue.widget.theme.ColorRelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_classify"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+</LinearLayout>

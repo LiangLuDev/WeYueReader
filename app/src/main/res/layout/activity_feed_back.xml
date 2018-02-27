@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/theme_toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="联系方式（QQ）:"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_qq"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rect_line_ccc"
+        android:hint="QQ号码"
+        android:inputType="number"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="问题描述："
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_rect_line_ccc"
+        android:gravity="start"
+        android:hint="请描述问题出现场景或者对本项目有更好的建议欢迎提议，谢谢"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/btnBackground"
+        android:text="提交反馈"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ReadActivity-->
+    <style name="WY.Theme.TextAppearance.Read"></style>
+
+    <style name="WY.Theme.TextAppearance.Read.TopMenu">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_cb</item>
+        <item name="android:textSize">@dimen/wy.read.text.top</item>
+    </style>
+
+    <style name="WY.Theme.TextAppearance.Read.BottomMenu">
+        <item name="android:textColor">@color/color_cb</item>
+        <item name="android:textSize">@dimen/wy.read.text.bottom</item>
+    </style>
+
+    <style name="WY.Theme.TextAppearance.Read.BottomMenu.Button"
+           parent="WY.Theme.TextAppearance.Read.BottomMenu">
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="WY.Theme.TextAppearance.File"/>
+    <style name="WY.Theme.TextAppearance.File.Tag">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Common-->
+    <style name="WY.Theme.TextAppearance.Common"/>
+    <style name="WY.Theme.TextAppearance.Common.SingleLine">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <!--book_detail-->
+
+    <style name="book_detail_51">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@color/color_51</item>
+    </style>
+    <style name="book_detail_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="book_detail_51.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="book_detail_51.10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="book_detail_black.10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="book_detail_black.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

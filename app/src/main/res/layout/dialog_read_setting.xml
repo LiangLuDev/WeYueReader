@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016 JustWayward Team
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/read_setting_ll_menu"
+              android:layout_width="match_parent"
+              android:layout_height="280dp"
+              android:layout_alignParentBottom="true"
+              android:background="@color/color_19"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/read_setting_iv_brightness_minus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="center"
+            android:src="@mipmap/brightness_minus"/>
+
+        <SeekBar
+            android:id="@+id/read_setting_sb_brightness"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbOffset="10dp"/>
+
+        <ImageView
+            android:id="@+id/read_setting_iv_brightness_plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="center"
+            android:src="@mipmap/brightness_plus"/>
+
+        <CheckBox
+            android:id="@+id/read_setting_cb_brightness_auto"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_btn_read_setting"
+            android:button="@null"
+            android:gravity="center"
+            android:text="系统"
+            android:textColor="@color/selector_btn_read_setting"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/read_setting_tv_font_minus"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_btn_read_setting_normal"
+            android:gravity="center"
+            android:text="Aa-"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/read_setting_tv_font"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/read_setting_tv_font_plus"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_btn_read_setting_normal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Aa+"
+            android:textSize="18dp"/>
+
+        <CheckBox
+            android:id="@+id/read_setting_cb_font_default"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_btn_read_setting"
+            android:button="@null"
+            android:gravity="center"
+            android:text="默认"
+            android:textColor="@color/selector_btn_read_setting"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/read_setting_rg_page_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/read_setting_rb_simulation"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_read_setting"
+            android:button="@null"
+            android:gravity="center"
+            android:text="仿真"
+            android:textSize="14dp"/>
+
+        <RadioButton
+            android:id="@+id/read_setting_rb_cover"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_read_setting"
+            android:button="@null"
+            android:gravity="center"
+            android:text="覆盖"
+            android:textSize="14dp"/>
+
+        <RadioButton
+            android:id="@+id/read_setting_rb_slide"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_read_setting"
+            android:button="@null"
+            android:gravity="center"
+            android:text="滑动"
+            android:textSize="14dp"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/read_setting_rb_scroll"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_read_setting"
+            android:button="@null"
+            android:gravity="center"
+            android:text="滚动"
+            android:textSize="14dp"/>
+
+        <RadioButton
+            android:id="@+id/read_setting_rb_none"
+            style="@style/WY.Theme.TextAppearance.Read.BottomMenu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_read_setting"
+            android:button="@null"
+            android:gravity="center"
+            android:text="无"
+            android:textSize="14dp"/>
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/read_setting_rv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

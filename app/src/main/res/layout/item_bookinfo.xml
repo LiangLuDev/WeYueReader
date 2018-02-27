@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_bg"
+        android:padding="10dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:transitionName="bookImage"
+            android:id="@+id/book_brief_iv_portrait"
+            android:layout_width="65dp"
+            android:layout_height="87dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_book_loading"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/book_brief_iv_portrait"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_brief_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="宦官哈哈"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/book_brief_tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="xxxxxxxxxxxxxxxx"
+                android:textColor="@color/color_51"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/book_brief_tv_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="xxxxxxxxxxxxxxxx"
+                android:textColor="@color/color_51"
+                android:textSize="12sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <com.lianglu.weyue.widget.theme.ColorTextView
+                    android:id="@+id/ctv_arrow_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="25"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="人气"
+                    android:textColor="@color/color_51"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="|"
+                    android:textColor="@color/color_51"
+                    android:textSize="11sp"/>
+
+                <com.lianglu.weyue.widget.theme.ColorTextView
+                    android:id="@+id/ctv_retention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="25%"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="读者留存"
+                    android:textColor="@color/color_51"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

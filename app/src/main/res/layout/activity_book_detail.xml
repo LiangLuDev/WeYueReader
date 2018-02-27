@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.lianglu.weyue.view.activity.impl.BookDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f3f3">
+
+        <include layout="@layout/theme_toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/crl"
+            android:layout_marginBottom="40dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/iv_book_image"
+                        android:layout_width="65dp"
+                        android:layout_height="87dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_book_loading"
+                        android:transitionName="bookImage"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/iv_book_image"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_book_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="70dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="反叛的大魔王"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <com.lianglu.weyue.widget.theme.ColorTextView
+                                android:id="@+id/ctv_book_author"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="赵青山"
+                                android:textColor="?attr/colorPrimary"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_book_classify"
+                                style="@style/book_detail_51.12"
+                                android:text="  |  都市"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_word_updatetime"
+                            style="@style/book_detail_51.12"
+                            android:layout_marginTop="6dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="36万字  |  37分钟前"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                style="@style/book_detail_51.10"
+                                android:text="追书评分"/>
+
+                            <com.lianglu.weyue.widget.theme.ColorTextView
+                                android:id="@+id/ctv_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:textColor="?attr/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_evaluate"
+                                style="@style/book_detail_51.10"
+                                android:text="0人评"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            style="@style/book_detail_51.10"
+                            android:text="追书人气"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fow_num"
+                            style="@style/book_detail_black.10"
+                            android:layout_marginTop="5dp"
+                            android:text="4365"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="30dp"
+                        android:background="@color/color_aeadad"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            style="@style/book_detail_51.10"
+                            android:text="读者留存"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_good_num"
+                            style="@style/book_detail_black.10"
+                            android:layout_marginTop="5dp"
+                            android:text="35.21%"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="30dp"
+                        android:background="@color/color_aeadad"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            style="@style/book_detail_51.10"
+                            android:text="日更新字"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_word_count"
+                            style="@style/book_detail_black.10"
+                            android:layout_marginTop="5dp"
+                            android:text="3521"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <include layout="@layout/line_horizontal"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/book_detail_tagview"/>
+
+                    <TextView
+                        style="@style/book_detail_black.16"
+                        android:layout_marginLeft="5dp"
+                        android:text="简介"
+                        />
+
+
+                </LinearLayout>
+
+                <com.lcodecore.extextview.ExpandTextView
+                    android:id="@+id/tv_book_brief"
+                    style="@style/book_detail_51.12"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="发挥第三方空间都是开发商佛山地块附近的飞机螺丝钉机发牢骚附近立法监督法律解释法律监督了"
+                    app:arrowAlign="right"
+                    app:arrowPadding="8dp"
+                    app:arrowPosition="below"
+                    app:maxCollapsedLines="3"
+                    />
+
+                <include layout="@layout/line_horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/book_detail_tagview"/>
+
+                    <TextView
+                        style="@style/book_detail_black.16"
+                        android:layout_marginLeft="5dp"
+                        android:text="标签"
+                        />
+                </LinearLayout>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/fl_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <!--<include layout="@layout/line_horizontal"/>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_book_copyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <include layout="@layout/book_detail_tagview"/>
+
+                    <TextView
+                        style="@style/book_detail_black.16"
+                        android:layout_marginLeft="5dp"
+                        android:text="图书信息"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_copyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="版权：阅文集团正版授权"
+                    android:textColor="@color/color_51"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_fow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.lianglu.weyue.widget.theme.ColorTextView
+                        android:id="@+id/ctv_addbook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加书架"
+                        android:textColor="?attr/colorPrimary"/>
+
+                </LinearLayout>
+
+                <com.lianglu.weyue.widget.theme.ColorRelativeLayout
+                    android:id="@+id/crl_start_read"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始阅读"
+                        android:textColor="@color/white"/>
+
+
+                </com.lianglu.weyue.widget.theme.ColorRelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

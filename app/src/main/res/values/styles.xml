@@ -1,0 +1,325 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+
+    <!--theme styles-->
+    <!--blueTheme-->
+    <style name="BlueTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
+        <item name="colorAccent">@color/colorBluePrimaryDark</item>
+        <item name="menuBackground">@drawable/blue_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_blue</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_blue</item>
+        <item name="md_title_color">@color/colorBluePrimary</item>
+        <item name="md_link_color">@color/colorBluePrimary</item>
+        <item name="md_positive_color">@color/colorBluePrimary</item>
+
+    </style>
+
+    <!--redTheme-->
+    <style name="RedTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorRedPrimary</item>
+        <item name="colorPrimaryDark">@color/colorRedPrimaryDark</item>
+        <item name="colorAccent">@color/colorRedPrimaryDark</item>
+        <item name="menuBackground">@drawable/red_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_red</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_red</item>
+        <item name="md_title_color">@color/colorRedPrimary</item>
+        <item name="md_link_color">@color/colorRedPrimary</item>
+        <item name="md_positive_color">@color/colorRedPrimary</item>
+
+    </style>
+    <!--brownTheme-->
+    <style name="BrownTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBrownPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBrownPrimaryDark</item>
+        <item name="colorAccent">@color/colorBrownPrimaryDark</item>
+        <item name="menuBackground">@drawable/brown_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_brown</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_brown</item>
+        <item name="md_title_color">@color/colorBrownPrimary</item>
+        <item name="md_link_color">@color/colorBrownPrimary</item>
+        <item name="md_positive_color">@color/colorBrownPrimary</item>
+
+    </style>
+    <!--greenTheme-->
+    <style name="GreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorGreenPrimaryDark</item>
+        <item name="menuBackground">@drawable/green_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_green</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_green</item>
+        <item name="md_title_color">@color/colorGreenPrimary</item>
+        <item name="md_link_color">@color/colorGreenPrimary</item>
+        <item name="md_positive_color">@color/colorGreenPrimary</item>
+    </style>
+    <!--purpleTheme-->
+    <style name="PurpleTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorPurplePrimaryDark</item>
+        <item name="menuBackground">@drawable/purple_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_purple</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_purple</item>
+        <item name="md_title_color">@color/colorPurplePrimary</item>
+        <item name="md_link_color">@color/colorPurplePrimary</item>
+        <item name="md_positive_color">@color/colorPurplePrimary</item>
+    </style>
+    <!--tealTheme-->
+    <style name="TealTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorTealPrimary</item>
+        <item name="colorPrimaryDark">@color/colorTealPrimaryDark</item>
+        <item name="colorAccent">@color/colorTealPrimaryDark</item>
+        <item name="menuBackground">@drawable/teal_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_teal</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_teal</item>
+        <item name="md_title_color">@color/colorTealPrimary</item>
+        <item name="md_link_color">@color/colorTealPrimary</item>
+        <item name="md_positive_color">@color/colorTealPrimary</item>
+    </style>
+
+    <!--pinkTheme-->
+    <style name="PinkTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPinkPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPinkPrimaryDark</item>
+        <item name="colorAccent">@color/colorPinkPrimaryDark</item>
+        <item name="menuBackground">@drawable/pink_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_pink</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_pink</item>
+        <item name="md_title_color">@color/colorPinkPrimary</item>
+        <item name="md_link_color">@color/colorPinkPrimary</item>
+        <item name="md_positive_color">@color/colorPinkPrimary</item>
+    </style>
+
+    <!--deepPurpleTheme-->
+    <style name="DeepPurpleTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDeepPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepPurplePrimaryDark</item>
+        <item name="menuBackground">@drawable/deep_purple_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_deep_purple</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_deep_purple</item>
+        <item name="md_title_color">@color/colorDeepPurplePrimary</item>
+        <item name="md_link_color">@color/colorDeepPurplePrimary</item>
+        <item name="md_positive_color">@color/colorDeepPurplePrimary</item>
+    </style>
+
+    <!--orange-->
+    <style name="OrangeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorOrangePrimaryDark</item>
+        <item name="menuBackground">@drawable/orange_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_orange</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_orange</item>
+        <item name="md_title_color">@color/colorOrangePrimary</item>
+        <item name="md_link_color">@color/colorOrangePrimary</item>
+        <item name="md_positive_color">@color/colorOrangePrimary</item>
+    </style>
+
+
+    <!--indigo-->
+    <style name="IndigoTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorIndigoPrimary</item>
+        <item name="colorPrimaryDark">@color/colorIndigoPrimaryDark</item>
+        <item name="colorAccent">@color/colorIndigoPrimaryDark</item>
+        <item name="menuBackground">@drawable/indigo_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_indigo</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_indigo</item>
+        <item name="md_title_color">@color/colorIndigoPrimary</item>
+        <item name="md_link_color">@color/colorIndigoPrimary</item>
+        <item name="md_positive_color">@color/colorIndigoPrimary</item>
+    </style>
+
+
+    <!--cyan-->
+    <style name="CyanTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorCyanPrimary</item>
+        <item name="colorPrimaryDark">@color/colorCyanPrimaryDark</item>
+        <item name="colorAccent">@color/colorCyanPrimaryDark</item>
+        <item name="menuBackground">@drawable/cyan_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_cyan</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_cyan</item>
+        <item name="md_title_color">@color/colorCyanPrimary</item>
+        <item name="md_link_color">@color/colorCyanPrimary</item>
+        <item name="md_positive_color">@color/colorCyanPrimary</item>
+    </style>
+
+
+    <!--lightGreen-->
+    <style name="LightGreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorLightGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorLightGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorLightGreenPrimaryDark</item>
+        <item name="menuBackground">@drawable/light_green_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_light_green</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_light_green</item>
+        <item name="md_title_color">@color/colorLightGreenPrimary</item>
+        <item name="md_link_color">@color/colorLightGreenPrimary</item>
+        <item name="md_positive_color">@color/colorLightGreenPrimary</item>
+    </style>
+
+
+    <!--lime-->
+    <style name="LimeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorLimePrimary</item>
+        <item name="colorPrimaryDark">@color/colorLimePrimaryDark</item>
+        <item name="colorAccent">@color/colorLimePrimaryDark</item>
+        <item name="menuBackground">@drawable/lime_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_lime</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_lime</item>
+        <item name="md_title_color">@color/colorLimePrimary</item>
+        <item name="md_link_color">@color/colorLimePrimary</item>
+        <item name="md_positive_color">@color/colorLimePrimary</item>
+    </style>
+
+
+    <!--deepOrange-->
+    <style name="DeepOrangeTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDeepOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorDeepOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorDeepOrangePrimaryDark</item>
+        <item name="menuBackground">@drawable/deep_orange_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_deep_orange</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_deep_orange</item>
+        <item name="md_title_color">@color/colorDeepOrangePrimary</item>
+        <item name="md_link_color">@color/colorDeepOrangePrimary</item>
+        <item name="md_positive_color">@color/colorDeepOrangePrimary</item>
+    </style>
+
+
+    <!--blueGrey-->
+    <style name="BlueGreyTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorBlueGreyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlueGreyPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueGreyPrimaryDark</item>
+        <item name="menuBackground">@drawable/blue_grey_background</item>
+        <item name="btnBackground">@drawable/shape_rect_theme_blue_grey</item>
+        <item name="btnLineBackground">@drawable/shape_rect_line_theme_blue_grey</item>
+        <item name="md_title_color">@color/colorBlueGreyPrimary</item>
+        <item name="md_link_color">@color/colorBlueGreyPrimary</item>
+        <item name="md_positive_color">@color/colorBlueGreyPrimary</item>
+    </style>
+
+
+    <!--main_menu_style-->
+    <style name="MenuStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--Toolbar-->
+    <style name="Theme.ToolBar.Menu" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- 设置-弹窗的背景-颜色-->
+        <item name="android:colorBackground">@color/white</item>
+        <!-- 字体的颜色-->
+        <item name="android:textColor">@color/black</item>
+        <!-- 字体大小-->
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <!-- 用于替换菜单的三个小白点，换成自已的图片-->
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.Menu</item>-->
+        <!--用于控制menu弹出的位置，位于toolbar的下面，而不是上面-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!-- 用于修改item默认的分割线-->
+        <!--<item name="android:dropDownListViewStyle">@style/dropDownStyle</item>-->
+        <!--<item name="dropDownListViewStyle">@style/dropDownStyle</item>-->
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+
+    <!--Common-->
+    <style name="WY.Theme" parent="AppTheme"/>
+
+    <!-- TextAppearance:修改 -->
+    <style name="WY.Theme.TextAppearance"/>
+
+
+    <!--dialog-->
+    <style name="CommonDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--必须要加上这句才能实现真正的半透明，-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--直接写windowEnter或者windowExit 是无效的-->Re
+        <item name="android:windowAnimationStyle">@style/anim_slide_left_in_right_out</item>
+    </style>
+
+    <style name="ReadSettingDialog" parent="CommonDialog">
+        <item name="android:windowAnimationStyle">@style/anim_slide_bottom_in_out</item>
+    </style>
+
+    <!--animation-->
+    <style name="anim_slide_bottom_in_out" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="anim_slide_left_in_right_out" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="anim_slide_right_in_left_out" parent="android:Animation.Dialog">
+        <item name="android:windowExitAnimation">@anim/slide_right_out</item>
+        <item name="android:windowEnterAnimation">@anim/slide_left_in</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <!--tag弹框-->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/show</item>
+        <item name="android:windowExitAnimation">@anim/hide</item>
+    </style>
+
+
+    <style name="transparentText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+    <style name="ToolBarTitleText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="CyanTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="CyanTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+</resources>
