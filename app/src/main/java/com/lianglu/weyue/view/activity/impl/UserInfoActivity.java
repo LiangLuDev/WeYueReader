@@ -151,7 +151,7 @@ public class UserInfoActivity extends BaseActivity implements IUserInfo, TakePho
         mTvName.setText(mUsername);
         mEtNickName.setText(mUserBean.getNickname());
         Glide.with(mContext).load(Constant.BASE_URL + mUserBean.getIcon())
-                .apply(RequestOptions.bitmapTransform(new BlurTransformation(15))/*.diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true)*/)
+                .apply(RequestOptions.bitmapTransform(new BlurTransformation(15)).diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true))
                 .into(mIvAvatar);
 
         //获取TakePhoto实例

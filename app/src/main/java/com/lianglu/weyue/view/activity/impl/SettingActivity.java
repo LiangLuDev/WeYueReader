@@ -73,7 +73,7 @@ public class SettingActivity extends BaseActivity implements ISetting {
                         .positiveText("确定")
                         .onPositive((dialog, which) -> {
                             UserHelper.getsInstance().removeUser();
-                            SharedPreUtils.getInstance().sharedPreClear();
+//                            SharedPreUtils.getInstance().sharedPreClear();
                             finish();
                         })
                         .negativeText("取消")
