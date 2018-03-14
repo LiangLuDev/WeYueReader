@@ -2,6 +2,7 @@ package com.lianglu.weyue.viewmodel;
 
 import android.content.Context;
 
+import com.lianglu.weyue.WYApplication;
 import com.lianglu.weyue.utils.SharedPreUtils;
 
 import java.util.ArrayList;
@@ -25,22 +26,25 @@ public class BaseViewModel {
     }
 
 
-    public void addDisposadle(Disposable disposable){
+    public void addDisposadle(Disposable disposable) {
         disposables.add(disposable);
     }
 
     /**
      * 获取token
+     *
      * @return
      */
-    public Map tokenMap(){
+    public Map tokenMap() {
         Map<String, Object> map = new HashMap<>();
         map.put("access-token", SharedPreUtils.getInstance().getString("token", "weyue"));
+        map.put("app-type", "Android");
+        map.put("version-code", WYApplication.packageInfo.versionCode);
         return map;
     }
 
     public void onDestroy() {
-        if (disposables.size()>0) {
+        if (disposables.size() > 0) {
             for (Disposable disposable : disposables) {
                 disposable.dispose();
             }
