@@ -39,7 +39,7 @@ public class BaseViewModel {
         Map<String, Object> map = new HashMap<>();
         map.put("access-token", SharedPreUtils.getInstance().getString("token", "weyue"));
         map.put("app-type", "Android");
-        map.put("version-code", WYApplication.packageInfo.versionCode);
+//        map.put("version-code", WYApplication.packageInfo.versionCode);
         return map;
     }
 

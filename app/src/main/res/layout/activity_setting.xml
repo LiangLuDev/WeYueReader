@@ -14,9 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/ic_yue"/>
+        app:srcCompat="@mipmap/ic_icon"/>
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/tv_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
