@@ -8,6 +8,11 @@
         <!--<item name="colorAccent">@color/colorAccent</item>-->
     </style>
 
+    <!--<style name="AppThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="android:windowBackground">@mipmap/splash</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    <!--</style>-->
+
 
     <!--theme styles-->
     <!--blueTheme-->
