@@ -94,6 +94,7 @@ public class BookTagDialog extends Dialog {
     private void getBooksByTag() {
         Map<String, Object> map = new HashMap<>();
         map.put("access-token", SharedPreUtils.getInstance().getString("token", "weyue"));
+        map.put("app-type", "Android");
         RxHttpUtils.getSInstance().addHeaders(map).createSApi(BookService.class)
                 .booksByTag(tagName, page)
                 .compose(Transformer.switchSchedulers())
