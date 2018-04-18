@@ -2,8 +2,6 @@ package com.lianglu.weyue.view.activity.impl;
 
 import android.Manifest;
 import android.animation.Animator;
-import android.app.ActivityOptions;
-import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -20,7 +18,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.afollestad.materialdialogs.color.ColorChooserDialog;
@@ -36,7 +33,6 @@ import com.lianglu.weyue.model.MainMenuBean;
 import com.lianglu.weyue.utils.AppUpdateUtils;
 import com.lianglu.weyue.utils.BaseUtils;
 import com.lianglu.weyue.utils.Constant;
-import com.lianglu.weyue.utils.GsonUtils;
 import com.lianglu.weyue.utils.SharedPreUtils;
 import com.lianglu.weyue.utils.SnackBarUtils;
 import com.lianglu.weyue.utils.ThemeUtils;
@@ -47,7 +43,6 @@ import com.lianglu.weyue.view.base.BaseActivity;
 import com.lianglu.weyue.view.fragment.impl.BookClassifyFragment;
 import com.lianglu.weyue.view.fragment.impl.BookShelfFragment;
 import com.lianglu.weyue.view.fragment.impl.ScanBookFragment;
-import com.lianglu.weyue.viewmodel.BaseViewModel;
 import com.lianglu.weyue.viewmodel.activity.VMSettingInfo;
 import com.lianglu.weyue.widget.ResideLayout;
 import com.lianglu.weyue.widget.theme.ColorRelativeLayout;
@@ -95,6 +90,7 @@ public class MainActivity extends BaseActivity implements ColorChooserDialog.Col
     private List<MainMenuBean> menuBeans = new ArrayList<>();
     private long fristTime = 0;
     private VMSettingInfo mModel;
+    private String mUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -266,9 +262,8 @@ public class MainActivity extends BaseActivity implements ColorChooserDialog.Col
                         .show();
                 break;
             case R.id.tv_setting:
-                String name = SharedPreUtils.getInstance()
-                        .getString("username", "");
-                if (name.equals("")) {
+
+                if (mUsername.equals("")) {
                     startActivity(LoginActivity.class);
                 } else {
                     startActivity(SettingActivity.class);
@@ -395,20 +390,27 @@ public class MainActivity extends BaseActivity implements ColorChooserDialog.Col
     @Override
     protected void onResume() {
         super.onResume();
-        String username = SharedPreUtils.getInstance().getString("username", "");
-        if (!username.equals("")) {
-            UserBean userBean = UserHelper.getsInstance().findUserByName(username);
-            Glide.with(mContext).load(Constant.BASE_URL + userBean.getIcon())
-                    .apply(new RequestOptions().transform(new CircleCrop()).diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true))
-                    .into(mIvAvatar);
-            mTvDesc.setText(userBean.getBrief());
-        } else {
-            Glide.with(mContext).load(R.mipmap.avatar)
-                    .apply(new RequestOptions().transform(new CircleCrop()).diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true))
-                    .into(mIvAvatar);
-            mTvDesc.setText("未登录");
+        mUsername = SharedPreUtils.getInstance().getString("username", "");
+        try {
+            if (!mUsername.equals("")) {
+                UserBean userBean = UserHelper.getsInstance().findUserByName(mUsername);
+                Glide.with(mContext).load(Constant.BASE_URL + userBean.getIcon())
+                        .apply(new RequestOptions().transform(new CircleCrop()).diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true))
+                        .into(mIvAvatar);
+                mTvDesc.setText(userBean.getBrief());
+                mTvSetting.setText("设置");
+            } else {
+                Glide.with(mContext).load(R.mipmap.avatar)
+                        .apply(new RequestOptions().transform(new CircleCrop()).diskCacheStrategy(DiskCacheStrategy.NONE).skipMemoryCache(true))
+                        .into(mIvAvatar);
+                mTvDesc.setText("未登录");
+                mTvSetting.setText("登录");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
+
 
     @Override
     public void onBackPressed() {

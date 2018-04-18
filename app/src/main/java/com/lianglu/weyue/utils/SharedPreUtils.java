@@ -40,6 +40,13 @@ public class SharedPreUtils {
         sharedWritable.clear().apply();
     }
 
+    /**
+     * 清除本地数据指定key
+     */
+    public void sharedPreRemove(String key) {
+        sharedWritable.remove(key).apply();
+    }
+
     public String getString(String key, String defValue) {
         return sharedReadable.getString(key, defValue);
     }

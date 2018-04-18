@@ -30,7 +30,7 @@ public class VMFeedBackInfo extends BaseViewModel {
      * @param feedback
      */
     public void commitFeedBack(String qq, String feedback) {
-        RxHttpUtils.createApi(UserService.class)
+        RxHttpUtils.getSInstance().addHeaders(tokenMap()).createSApi(UserService.class)
                 .userFeddBack(qq, feedback)
                 .compose(Transformer.switchSchedulers())
                 .subscribe(new RxObserver<String>() {
