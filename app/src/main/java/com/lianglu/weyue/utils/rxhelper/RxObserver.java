@@ -73,7 +73,9 @@ public abstract class RxObserver<T> extends BaseDataObserver<T> {
             case 60001:
             case 60002:
                 ToastUtils.showToast(data.getMsg());
-                WYApplication.getAppContext().startActivity(new Intent(WYApplication.getAppContext(), LoginActivity.class));
+                Intent intent = new Intent(WYApplication.getAppContext(), LoginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                WYApplication.getAppContext().startActivity(intent);
                 break;
             case 10005:
             case 40000:
