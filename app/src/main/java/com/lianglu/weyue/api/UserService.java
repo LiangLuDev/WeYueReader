@@ -12,6 +12,8 @@ import io.reactivex.Observable;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.http.DELETE;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
@@ -32,7 +34,8 @@ public interface UserService {
      * @return
      */
     @POST(ModelPath.USER + "/register")
-    Observable<BaseData<String>> register(@Query("name") String username, @Query("password") String password);
+    @FormUrlEncoded
+    Observable<BaseData<String>> register(@Field("name") String username, @Field("password") String password);
 
     /**
      * 用户登录
@@ -94,7 +97,8 @@ public interface UserService {
      * @return
      */
     @POST(ModelPath.USER + "/bookshelf")
-    Observable<BaseData<String>> addBookShelf(@Query("bookid") String bookid);
+    @FormUrlEncoded
+    Observable<BaseData<String>> addBookShelf(@Field("bookid") String bookid);
 
     /**
      * 移除书架
@@ -113,7 +117,8 @@ public interface UserService {
      * @return
      */
     @POST(ModelPath.API + "/feedback")
-    Observable<BaseData<String>> userFeddBack(@Query("qq") String qq, @Query("feedback") String feedback);
+    @FormUrlEncoded
+    Observable<BaseData<String>> userFeddBack(@Field("qq") String qq, @Field("feedback") String feedback);
 
     /**
      * 用户反馈
