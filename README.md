@@ -43,10 +43,9 @@
 如果觉得还行的话，点一下右上的星星赞一下吧! 谢谢啦！
 
 #### 常见问题
->1、Clone下来自己运行之后拿不到数据。
+##### 1、Clone下来自己运行之后拿不到数据。
 >修改utils-Constant里面的为!BuildConfig.DEBUG即可（切换为服务器地址）
->2、Android 4.x版本崩溃。
+#####2、Android 4.x版本崩溃。
 >由于4.x版本不支持svg图片，所以会保错，目前没有解决（谅解，时间有限）
->3、扫二维码无法下载
->因为fir每天有下载次数，如果不能下载。[点击这里下载]()
-  
+##### 3、扫二维码无法下载
+>因为fir每天有下载次数，如果不能下载。[点击这里下载](https://github.com/LiangLuDev/WeYueReader/blob/master/release/WeYue.apk)
