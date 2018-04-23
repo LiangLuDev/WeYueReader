@@ -11,6 +11,7 @@ import com.lianglu.weyue.db.entity.CollBookBean;
 import com.lianglu.weyue.db.helper.CollBookHelper;
 import com.lianglu.weyue.model.BookBean;
 import com.lianglu.weyue.model.BookChaptersBean;
+import com.lianglu.weyue.model.DeleteBookBean;
 import com.lianglu.weyue.utils.LoadingHelper;
 import com.lianglu.weyue.utils.LogUtils;
 import com.lianglu.weyue.utils.ToastUtils;
@@ -42,8 +43,10 @@ public class VMBookShelf extends BaseViewModel {
      */
     public void deleteBookShelfToServer(CollBookBean mCollBookBean) {
         LoadingHelper.getInstance().showLoading(mContext);
+        DeleteBookBean bean=new DeleteBookBean();
+        bean.setBookid(mCollBookBean.get_id());
         RxHttpUtils.getSInstance().addHeaders(tokenMap()).createSApi(UserService.class)
-                .deleteBookShelf(mCollBookBean.get_id()).compose(Transformer.switchSchedulers())
+                .deleteBookShelf(bean).compose(Transformer.switchSchedulers())
                 .subscribe(new RxObserver<String>() {
                     @Override
                     protected void onError(String errorMsg) {

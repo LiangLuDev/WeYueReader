@@ -8,6 +8,7 @@ import com.allen.library.interceptor.Transformer;
 import com.lianglu.weyue.api.BookService;
 import com.lianglu.weyue.api.UserService;
 import com.lianglu.weyue.model.BookBean;
+import com.lianglu.weyue.model.DeleteBookBean;
 import com.lianglu.weyue.utils.LogUtils;
 import com.lianglu.weyue.utils.ToastUtils;
 import com.lianglu.weyue.utils.rxhelper.RxObserver;
@@ -131,8 +132,10 @@ public class VMBookDetailInfo extends BaseViewModel {
      * @param mCollBookBean
      */
     public void deleteBookShelfToServer(CollBookBean mCollBookBean) {
+        DeleteBookBean bean=new DeleteBookBean();
+        bean.setBookid(mCollBookBean.get_id());
         RxHttpUtils.getSInstance().addHeaders(tokenMap()).createSApi(UserService.class)
-                .deleteBookShelf(mCollBookBean.get_id()).compose(Transformer.switchSchedulers())
+                .deleteBookShelf(bean).compose(Transformer.switchSchedulers())
                 .subscribe(new RxObserver<String>() {
                     @Override
                     protected void onError(String errorMsg) {

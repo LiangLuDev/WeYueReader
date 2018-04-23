@@ -4,17 +4,18 @@ import com.allen.library.bean.BaseData;
 import com.lianglu.weyue.db.entity.UserBean;
 import com.lianglu.weyue.model.AppUpdateBean;
 import com.lianglu.weyue.model.BookBean;
+import com.lianglu.weyue.model.DeleteBookBean;
 
-import java.io.File;
 import java.util.List;
 
 import io.reactivex.Observable;
 import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
+import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.HTTP;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
@@ -52,7 +53,8 @@ public interface UserService {
      * @return
      */
     @PUT(ModelPath.USER + "/password")
-    Observable<BaseData<String>> updatePassword(@Query("password") String password);
+    @FormUrlEncoded
+    Observable<BaseData<String>> updatePassword(@Field("password") String password);
 
     /**
      * 修改用户信息
@@ -62,7 +64,8 @@ public interface UserService {
      * @return
      */
     @PUT(ModelPath.USER + "/userinfo")
-    Observable<BaseData<String>> updateUserInfo(@Query("nickname") String nickname, @Query("brief") String brief);
+    @FormUrlEncoded
+    Observable<BaseData<String>> updateUserInfo(@Field("nickname") String nickname, @Field("brief") String brief);
 
     /**
      * 修改用户信息
@@ -103,11 +106,12 @@ public interface UserService {
     /**
      * 移除书架
      *
-     * @param bookid 书籍id
      * @return
      */
-    @DELETE(ModelPath.USER + "/bookshelf")
-    Observable<BaseData<String>> deleteBookShelf(@Query("bookid") String bookid);
+//    @DELETE(ModelPath.USER + "/bookshelf")
+    @HTTP(method = "DELETE", path = ModelPath.USER + "/bookshelf", hasBody = true)
+//    @FormUrlEncoded
+    Observable<BaseData<String>> deleteBookShelf(@Body DeleteBookBean bean);
 
     /**
      * 用户反馈
