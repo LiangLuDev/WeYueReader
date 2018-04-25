@@ -18,7 +18,7 @@ public class Constant {
 //            BASE_URL = "http://192.168.1.121:3389";
             BASE_URL = "http://192.168.5.87:3389";
         } else {
-            BASE_URL = "http://120.55.57.236";
+            BASE_URL = "http://www.luliangdev.cn";
         }
     }
 
