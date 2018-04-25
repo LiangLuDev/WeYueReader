@@ -108,9 +108,7 @@ public interface UserService {
      *
      * @return
      */
-//    @DELETE(ModelPath.USER + "/bookshelf")
     @HTTP(method = "DELETE", path = ModelPath.USER + "/bookshelf", hasBody = true)
-//    @FormUrlEncoded
     Observable<BaseData<String>> deleteBookShelf(@Body DeleteBookBean bean);
 
     /**
