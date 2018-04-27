@@ -1,4 +1,6 @@
-# 微Yue电子书
+#微Yue电子书
+
+#### [GitHub项目地址](https://github.com/LiangLuDev/WeYueReader)
 ###  项目功能
 - 注册登录
 - 用户信息、用户密码、用户图像修改
@@ -31,25 +33,38 @@
 ### 项目介绍
 > 书籍数据爬取<追书神器>,付费章节是无法阅读的，因为付费章节的书籍内容是加密字符串。书籍数据也不会跟及时更新，只是隔段时间会去更新。这个项目主要是学习为主。项目最开始是准备使用MVVM架构配合DataBinding开发项目，实际运用中DataBinding在Android Studio支持不太友好，就放弃使用（因为太耗费时间），后来也懒得改，不过代码量不多，代码清晰。
 ### 下载体验
+
 - ![微Yue.apk](http://upload-images.jianshu.io/upload_images/2635045-4ce921c9353b879c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > 或者（扫任意一个二维码都可以下载体验）
 
 - ![微Yue.apk](https://upload-images.jianshu.io/upload_images/2635045-30d7a37bc769bd4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 
 ### 感谢
 - [Allen](https://github.com/lygttpod) -使用RxHttpUtils相识（竟然是老乡），帮我解答不少问题
 - [Richard Liu](https://github.com/XiqingLiu) -好机油，经常开技术研讨会（是他演讲，我听着）
 
 ### 意见反馈
-如果遇到问题或者好的建议，请反馈到：issue、927195249@qq.com 或者LiangLuDev@gmail.com
+如果遇到问题或者好的建议，请反馈到：927195249@qq.com 或者LiangLuDev@gmail.com
 
-如果觉得还行的话，点一下右上的星星赞一下吧! 谢谢啦！
+如果觉得还行的话，赞一下吧! 谢谢啦！
 
-#### 常见问题
+
+### TODO
+- 支持PDF等更多格式文件
+- 添加更多电子书（如果哪位朋友有免费电子书网站可以给我说一下，谢谢）
+- 如果有ios朋友有意向开发ios版，可联系我。
+
+
+### 说明
+> 本项目仅提供技术学习交流，不可作为商用。
+
+### 常见问题
 ##### 1、Clone下来自己运行之后拿不到数据。
 >修改utils-Constant里面的为!BuildConfig.DEBUG即可（切换为服务器地址）
-![server_address_switch.png](https://upload-images.jianshu.io/upload_images/2635045-e6e90d26397d5c3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ##### 2、Android 4.x版本崩溃。
 >由于4.x版本不支持svg图片，所以会保错，目前没有解决（谅解，时间有限）
 ##### 3、应用内版本更新
-> 从我提供的二维码扫描下载的，在应用内是可以正常更新的，自己clone跑起来，提示更新，下载是无法覆盖安装的。（签名问题）
+> 从我提供的二维码扫描下载的，在应用内是可以正常更新的，自己clone跑 来，提示更新，下载是无法覆盖安装的。
+  
