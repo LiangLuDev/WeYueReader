@@ -1,6 +1,4 @@
-#微Yue电子书
-
-#### [GitHub项目地址](https://github.com/LiangLuDev/WeYueReader)
+# 微Yue电子书
 ###  项目功能
 - 注册登录
 - 用户信息、用户密码、用户图像修改
