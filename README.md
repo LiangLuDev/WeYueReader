@@ -63,7 +63,7 @@
 >修改utils-Constant里面的为!BuildConfig.DEBUG即可（切换为服务器地址）
 ![server_address_switch.png](https://upload-images.jianshu.io/upload_images/2635045-e6e90d26397d5c3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#####2、Android 4.x版本崩溃。
+##### 2、Android 4.x版本崩溃。
 >由于4.x版本不支持svg图片，所以会保错，目前没有解决（谅解，时间有限）
 ##### 3、应用内版本更新
 > 从我提供的二维码扫描下载的，在应用内是可以正常更新的，自己clone跑起来，提示更新，下载是无法覆盖安装的。（签名问题）  
