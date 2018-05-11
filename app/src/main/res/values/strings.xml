@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">微Yue</string>
+    <string name="app_name">微Yue电子书</string>
 
     <!--read-->
     <string name="wy.read.community">社区</string>

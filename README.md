@@ -61,7 +61,7 @@
 #### 常见问题
 ##### 1、Clone下来自己运行之后拿不到数据。
 >修改utils-Constant里面的为!BuildConfig.DEBUG即可（切换为服务器地址）
-![server_address_switch.png](https://upload-images.jianshu.io/upload_images/2635045-e6e90d26397d5c3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![server_address_switch.png](https://upload-images.jianshu.io/upload_images/2635045-4280b873649a0b74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### 2、Android 4.x版本崩溃。
 >由于4.x版本不支持svg图片，所以会保错，目前没有解决（谅解，时间有限）
