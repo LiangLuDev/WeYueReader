@@ -6,7 +6,6 @@ def libs = rootProject.ext.libraries
 
 android {
     compileSdkVersion cfg.compileVersion
-    buildToolsVersion cfg.buildToolsVersion
     defaultConfig {
         applicationId "com.lianglu.weyue"
         minSdkVersion cfg.minSdk
@@ -55,6 +54,7 @@ android {
         targetCompatibility 1.8
         sourceCompatibility 1.8
     }
+    buildToolsVersion '27.0.3'
 }
 
 

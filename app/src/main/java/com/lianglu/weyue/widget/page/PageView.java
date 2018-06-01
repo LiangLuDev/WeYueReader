@@ -20,8 +20,6 @@ import com.lianglu.weyue.widget.animation.SlidePageAnim;
 
 
 /**
- * Created by Administrator on 2016/8/29 0029.
- * 原作者的GitHub Project ModelPath:(https://github.com/PeachBlossom/treader)
  * 绘制页面显示内容的类
  */
 public class PageView extends View {
