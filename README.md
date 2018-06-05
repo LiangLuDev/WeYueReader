@@ -32,13 +32,9 @@
 > 书籍数据爬取<追书神器>,付费章节是无法阅读的，因为付费章节的书籍内容是加密字符串。书籍数据也不会跟及时更新，只是隔段时间会去更新。这个项目主要是学习为主。项目最开始是准备使用MVVM架构配合DataBinding开发项目，实际运用中DataBinding在Android Studio支持不太友好，就放弃使用（因为太耗费时间），后来也懒得改，不过代码量不多，代码清晰。
 
 ### 下载体验
-项目已经上架酷安市场 [下载链接](https://www.coolapk.com/apk/184655)
-![微Yue.apk](http://upload-images.jianshu.io/upload_images/2635045-4ce921c9353b879c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-或者（扫任意一个二维码都可以下载体验）
+- 项目已经上架酷安市场 [下载链接](https://www.coolapk.com/apk/184655)
 
-![微Yue.apk](https://upload-images.jianshu.io/upload_images/2635045-30d7a37bc769bd4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
+- ![微Yue.apk](http://upload-images.jianshu.io/upload_images/2635045-4ce921c9353b879c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 感谢
 - [Allen](https://github.com/lygttpod) -使用RxHttpUtils相识（竟然是老乡），帮我解答不少问题
