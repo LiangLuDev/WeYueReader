@@ -1,6 +1,9 @@
 # 微Yue电子书-Java版本
 # [微Yue电子书-Kotlin版本](https://github.com/LiangLuDev/WeYueReader-Kotlin)
 
+## 注意
+现在Java版本由于Gradle无法编译过，切换到kotlin版本。
+
 ###  项目功能
 - 注册登录
 - 用户信息、用户密码、用户图像修改
