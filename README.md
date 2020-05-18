@@ -1,5 +1,5 @@
 # 微Yue电子书-Java版本
-# [微Yue电子书-Java版本](https://github.com/LiangLuDev/WeYueReader-Kotlin)
+# [微Yue电子书-Kotlin版本](https://github.com/LiangLuDev/WeYueReader-Kotlin)
 
 ###  项目功能
 - 注册登录
