@@ -1,6 +1,5 @@
-# 微Yue电子书（项目正在使用Kotlin重构中...）
-
-> 公告：由于这是之前练手的项目，而且书籍数据很久没有更新了，导致很多书籍地址有问题。所以已经在使用Kotlin配合Jetpack重构。
+# 微Yue电子书-Java版本
+# [微Yue电子书-Java版本](https://github.com/LiangLuDev/WeYueReader-Kotlin)
 
 ###  项目功能
 - 注册登录
